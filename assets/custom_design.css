@@ -1,0 +1,262 @@
+body {
+    background-color: #f2f2f2;
+    overflow-y:scroll;
+}
+
+.first_column{
+    height: 100vh;
+    background-color: rgb(35, 34, 34);
+    color: white;     
+    position: fixed;
+    left: 0;           
+}
+.btns_Col{
+    padding: 10px 0px;
+}
+
+.btns button{
+    padding: 8px;
+    width: 180px;
+    text-align: left;
+    border-radius: 8px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+
+.btn2 button{
+    padding: 8px;
+    width: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+
+.second_column {
+    margin-left: 254px;
+    padding-bottom: 100px;
+}
+
+/* Button Styles */
+/* .custom-button {
+display: flex;
+width: 100%;
+align-items: center;
+gap: 10px;
+border-radius: 5px;
+padding: 10px;
+font-size: 14px;
+transition: background-color 0.2s;
+} */
+
+
+/* Button Styles */
+.custom-button {
+color: white; /* Initial text color */
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;    
+/* border-top: 1px solid white; */
+display: flex;
+align-items: center;
+justify-content: flex-start; /* Align text to the left */
+gap: 10px;
+border-radius: 5px;
+padding: 10px;
+font-size: 14px;    
+background-color:  rgb(35, 34, 34); /* Initial background color */
+height: 60px;
+}
+
+.custom-button:hover {
+background-color: #fff; /* Change background color on hover */
+color: #000; /* Change text color on hover */
+}
+
+.text_content{
+padding: 10px;
+background-color: #302f2f;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+/* .histry_text{
+
+height: 80vh;
+overflow-y: auto;
+
+} */
+
+.histry_text {
+height: 80vh;
+overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: rgb(35, 34, 34); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(194, 194, 194); 
+}
+
+
+/* Container for the input field and send icon */
+.message-input-container {
+position: fixed;
+bottom: 15px;
+left: 58%;
+transform: translateX(-50%);
+display: flex;
+align-items: center;
+background-color: #ffffff; /* Add your desired background color here */
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow here */
+width: 80%; /* Adjust the width as needed */
+max-width: 790px; /* Set a maximum width if desired */
+}
+
+/* Message input field */
+.message-input {
+flex-grow: 1; /* Takes up remaining space in the container */
+border: none;
+outline: none;
+background: transparent;
+font-size: 16px;
+}
+
+/* Send icon */
+.send-icon {
+font-size: 24px;
+color: #007bff; /* Change to your desired icon color */
+cursor: pointer;
+margin-left: 10px;
+}
+
+/* Style the input field when it's focused */
+.message-input:focus {
+border: 1px solid #007bff; /* Change to your desired focus border color */
+}
+
+#sendbtn {
+height: 30px;
+}
+
+
+.subside{
+
+/* background-color: white; */
+padding: 10px;
+margin: 10px;
+justify-content: center;
+text-align: center;
+display: flex;
+}
+
+label {
+font-size: 13px;
+color: #424242;
+font-weight: 500;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+margin: 0px;
+width: 140px;
+/* height: 40px; */
+padding: 20px;
+background: #E0E0E0;
+border-radius: 26px;
+overflow: hidden;
+position: relative;
+transition: all 0.3s ease;    
+display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+content: attr(data-on);
+position: absolute;
+font-size: 12px;
+font-weight: 500;
+top: 10px;
+right: 20px;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+content: attr(data-off);
+width: 70px;
+/* height: 16px; */
+background: #fff;
+border-radius: 26px;
+position: absolute;
+left: 2px;
+top: 5px;
+text-align: center;
+transition: all 0.3s ease;
+box-shadow: 0px 0px 6px -2px #111;
+padding: 5px 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]{
+cursor: pointer;
+width: 50px;
+height: 25px;
+opacity: 0;
+position: absolute;
+top: 0;
+z-index: 1;
+margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+content: attr(data-on);
+left: 68px;
+background: #fff;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+content: attr(data-off);
+right: auto;
+left: 20px;
+}
+
+/* .askQur{
+background-color: white;
+height: auto;    
+} */
+
+.question{
+padding: 20px 20px;
+width: 80%;
+text-align: left;
+position: relative;
+left: 100px;    
+display: flex;
+gap: 25px;
+}
+
+.answer{
+padding: 20px 20px;
+width: 80%;
+text-align: left;
+position: relative;
+left: 100px;    
+display: flex;
+gap: 25px;
+}
